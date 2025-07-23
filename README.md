@@ -56,7 +56,9 @@ Evaluation metrics:
   - Precison
   - Recall
   - F1-score
-**The table below shows the models performance across different metric.**
+
+
+**The table below shows the models performance across different metrics:**
 
 <table border="1" class="dataframe">
   <thead>
@@ -95,10 +97,11 @@ Evaluation metrics:
 </div>
   - Confusion Matrix
 
-
+**Logistic Regression Confusion Matrix**
   ![Logistic Regression](image-3.png)
 
 
+**Decision Tree Classifier Confusion Matrix**
   ![Decision Tree Classifier](image-4.png)
 
 
