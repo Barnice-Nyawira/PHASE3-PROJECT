@@ -26,7 +26,11 @@ The dataset contains **3333 records** and has **20 predictors** plus 1 as the ta
 
  **Initial data exploration showed that**:
   - Churn was imbalanced
+
+
   ![Churn Distribution](image-1.png)
+
+  
   - International plan, Customer service calls and total day charge has a big relationship with churn.
 ### 2.3.1 Data preparation
   1. **Missing values**: The dataset had no missing values.
@@ -52,20 +56,7 @@ Evaluation metrics:
   - Precison
   - Recall
   - F1-score
-  <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -102,11 +93,16 @@ Evaluation metrics:
 </table>
 </div>
   - Confusion Matrix
+
+
   ![Logistic Regression Confusion Matrix](image-3.png)
 
 
   ![Decision Tree Classifier Confusion Matrix](image-4.png)
+
+
   - ROC-AUC Score
+
 Decison Tree Classifier performed better on recall capturing more churners, while Logistic Regression had a higher precision.
 ## 5. Findings and Conclusion
   - Customer service call being the most significant predictor indicated that churn probability increases after the third call.
