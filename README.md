@@ -1,4 +1,5 @@
 # SyriaTel Customer Churn Prediction Project
+### Author: Barnice Wandeto
 ## 1. Overview
 This project uses machine learning algorithms to predict customers behaviors and also predicts the probability of which customers are more likely to churn(i.e,leave the service provider). In this project, we will use the Telco Customer Churn dataset from kaggle inorder to build a predictive model.The dataset contains **3333 records** and has **20 predictors** such as customer service calls, voice mail plans, monthlycharges, etc. The predictors will helps us learn about the customers behaviors that may result in them churning. The target variable is the customer 'churn' which tells whether a customer left the company or is still a customer. 
 ## 2. Business and Data Understanding
@@ -20,8 +21,10 @@ The dataset contains **3333 records** and has **20 predictors** plus 1 as the ta
  - **Day/eve/night/intl_mins/calls/charge**: Usage metrics.
  - **Customer Service Calls**: Number of calls a customer has made to customer service.
  - **Churn**: Our target Variable,(True if a customer churned,False if a customer is still using the service)
- ![Feature Distribution based on Importance](image-2.png)
- Initial data exploration showed that:
+  ![Feature Distribution based on Importance](image-2.png)
+
+
+ **Initial data exploration showed that**:
   - Churn was imbalanced
   ![Churn Distribution](image-1.png)
   - International plan, Customer service calls and total day charge has a big relationship with churn.
@@ -49,8 +52,59 @@ Evaluation metrics:
   - Precison
   - Recall
   - F1-score
+  <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>recall</th>
+      <th>precision</th>
+      <th>f1</th>
+      <th>roc_auc</th>
+    </tr>
+    <tr>
+      <th>classifiers</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>LogisticRegression</th>
+      <td>0.725217</td>
+      <td>0.704392</td>
+      <td>0.714653</td>
+      <td>0.780497</td>
+    </tr>
+    <tr>
+      <th>DecisionTreeClassifier</th>
+      <td>0.787826</td>
+      <td>0.904192</td>
+      <td>0.842007</td>
+      <td>0.895135</td>
+    </tr>
+  </tbody>
+</table>
+</div>
   - Confusion Matrix
   ![Logistic Regression Confusion Matrix](image-3.png)
+
+
   ![Decision Tree Classifier Confusion Matrix](image-4.png)
   - ROC-AUC Score
 Decison Tree Classifier performed better on recall capturing more churners, while Logistic Regression had a higher precision.
@@ -76,3 +130,4 @@ Decison Tree Classifier performed better on recall capturing more churners, whil
    - Review daytime tariffs.Consider lowering costs for frequent users
    - Offer alerts to customers which inform then when they charges are about to reach a costly limit.
    - Have different plans for users that can suit each of their call habits.
+
