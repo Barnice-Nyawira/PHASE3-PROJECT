@@ -56,6 +56,7 @@ Evaluation metrics:
   - Precison
   - Recall
   - F1-score
+**The table below shows the models performance across different metric.**
 
 <table border="1" class="dataframe">
   <thead>
@@ -95,15 +96,15 @@ Evaluation metrics:
   - Confusion Matrix
 
 
-  ![Logistic Regression Confusion Matrix](image-3.png)
+  ![Logistic Regression](image-3.png)
 
 
-  ![Decision Tree Classifier Confusion Matrix](image-4.png)
+  ![Decision Tree Classifier](image-4.png)
 
 
   - ROC-AUC Score
 
-Decison Tree Classifier performed better on recall capturing more churners, while Logistic Regression had a higher precision.
+Decison Tree Classifier outperformed LogisticRegression in all metrics.
 ## 5. Findings and Conclusion
   - Customer service call being the most significant predictor indicated that churn probability increases after the third call.
   - Customers with an international plan are more likely to churn.
